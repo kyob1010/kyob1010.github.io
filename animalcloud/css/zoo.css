@@ -1,0 +1,60 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("../assets/cartoon-style-clouds.png");
+}
+
+#page {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#animalBox-container {
+    padding-top: 75%;
+    position: relative;
+    margin-top: 20px;
+}
+
+#animalBox-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+#animalBox {
+    background: linear-gradient(#FDEBA5, #D7BF5E);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+#animalBox > * {
+    height: 100%;
+    width: 100%;
+}
+
+#topBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(#FFDC71, #CDA019);
+    box-shadow: 0 5px 5px #999;
+    display: flex;
+    justify-content:space-between;
+}
+
+#controlBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background: linear-gradient(#FFDC71, #CDA019);
+    box-shadow: 0 -5px 5px #999;
+    display: flex;
+    justify-content:space-between;
+}

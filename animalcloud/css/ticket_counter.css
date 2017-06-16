@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("../assets/cartoon-style-clouds.png");
+}
+
+#page {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.prefix-ticketCounter {
+    display: flex;
+    justify-content: center;
+}
+
+#ticketCounter-container {
+    width: 70%;
+    padding-top: 100%;
+    position: relative;
+}
+
+#ticketCounter-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ticketCounter {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+#ticketCounter-container {
+    width: 100%;
+}
+}
+
+#menu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#ticketBuyingForm {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+#cover {
+    width: 100%;
+    min-height: 1500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.non-show {
+    display: none;
+}
+
+#controlBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(#FFDC71, #CDA019);
+    box-shadow: 0 5px 5px #999;
+    display: flex;
+    justify-content:space-between;
+}

@@ -1,0 +1,52 @@
+<html !DOCTYPE>
+    <head>
+        <title>動物卡片圖鑑</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="./js/animalIllustration.js"></script>
+        <script src="./js/animalCloud.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/animalIllustration.css">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    </head>
+    <body ng-app="myApp" ng-controller="myCtrl">
+        <div class="container" id="page">
+            <div class="row">
+                <div id="controlBox" class="col-12">
+                    <button class="btn btn-primary" id="goToSquard">回廣場</button>
+                </div>
+            </div>
+            <div class="row">
+                <div-- class="col-md-3" ng-repeat="x in cards">
+                    <!--div class="card">
+                        <img src="https://placehold.it/300x300" alt="Avatar">
+                        <div class="container2">
+                            <h4><b>{{x.name}}</b></h4> 
+                            <p>{{x.detail}}</p> 
+                        </div>
+                    </div-->
+                    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content https://placehold.it/300x300 -->
+                                <img class="displayed" ng-src="{{x.src}}">
+                                
+                            </div>
+                            <div class="back">
+                                <!-- back content -->
+                                <div class="card-container">
+                                    <h2><b>{{x.name}}</b></h2> 
+                                    <p>{{x.detail}}</p> 
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

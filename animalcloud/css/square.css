@@ -1,0 +1,45 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("../assets/cartoon-style-clouds.png");
+}
+
+#animalBox {
+    display: flex;
+    justify-content: center;
+}
+
+#page {
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#area-btns {
+    width: 100%;
+}
+
+#area-btns > button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 200px;
+    font-size: 3em;
+    font-family: fantasy;
+}
+
+.image {
+    width: 100%;
+    max-width: 500px;
+}
+
+#controlBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(#FFDC71, #CDA019);
+    box-shadow: 0 5px 5px #999;
+    display: flex;
+    justify-content:space-between;
+}
