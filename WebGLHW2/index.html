@@ -135,8 +135,9 @@
     );
   }
   
-  function normalize(value, _) {
-    return value;
+  function normalize(vector, _) {
+	  let l = Math.sqrt(vector[0] * vector[0] + vector[1] * vector[1] + vector[2] * vector[2])
+    return [vector[0]/l, vector[1]/l, vector[2]/l];
   }
   function mix(a, b, x) {
     return [a[0] * x + b[0] * (1-x), a[1] * x + b[1] * (1-x), a[2] * x + b[2] * (1-x)];
