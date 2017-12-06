@@ -127,7 +127,7 @@ function triangle(a, b, c) {
   return [a, b, c];
 }
 
-function getRamdomColor() {
+function getRandomColor() {
   return [Math.random(), Math.random(), Math.random()];
 }
 
@@ -161,7 +161,7 @@ function initBuffers(gl, n = 0) {
   //
   let faceColors = [];
   for (let i = 0; i < oct.length; ++i) {
-    faceColors.push(getRamdomColor());
+    faceColors.push(getRandomColor());
   }
   //
   let colors = [];
