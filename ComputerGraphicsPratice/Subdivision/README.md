@@ -1,6 +1,6 @@
 
-You can view this on [here](https://kyob1010.github.io/ComputerGraphicsPratice/RotatedAroundAnArbitraryAxis)
+You can view this on [here](https://kyob1010.github.io/ComputerGraphicsPratice/Subdivision)
 
 ***
 
-你可以在[這裡](https://kyob1010.github.io/ComputerGraphicsPratice/RotatedAroundAnArbitraryAxis)看到效果。
+你可以在[這裡](https://kyob1010.github.io/ComputerGraphicsPratice/Subdivision)看到效果。
