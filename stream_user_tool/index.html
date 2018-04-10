@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0;
+			}
+			.responsive-container {
+				position: relative;
+				display: flex;
+				width: 100%;
+			}
+			.video-container {
+				display: inline-flex;
+				position: relative;
+				top: 0;
+				bottom: 0;
+				flex: 1;
+			}
+			.video-container > div {
+				width: 100%;
+				padding-top: 56.25%;
+				position: relative;
+			}
+			.video-container > div > * {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+			}	
+			.chatroom-container {
+				display: inline-block;
+				position: relative;
+				top: 0;
+				bottom: 0;
+			}
+			.chatroom-container > * {
+				height: 100%
+			}
+		</style>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				let videoUrl = "";
+				let chatroomUrl = "";
+				//
+				let search = location.search.substring(1);
+				if (search.length > 0) {
+					let parseObj = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+					videoUrl = decodeURIComponent(parseObj.video);
+					chatroomUrl = decodeURIComponent(parseObj.chatroom);					
+				}
+				//
+				if (videoUrl == "") {
+					videoUrl = prompt("請輸入影片 url");
+					while (videoUrl == null) {
+						alert("你輸入的影片地址無效");
+						videoUrl = prompt("請輸入影片 url");
+					}
+				}
+				if (chatroomUrl == "") {
+					chatroomUrl = prompt("請輸入聊天室 url");
+					while (chatroomUrl == null) {
+						alert("你輸入的聊天室 url 無效");
+						chatroomUrl = prompt("請輸入聊天室 url");
+					}
+				}
+				//
+				document.querySelector('.video-container > div > *').src = videoUrl;
+				document.querySelector('.chatroom-container > *').src = chatroomUrl;
+			});
+		</script>
+	</head>
+	<body>
+		<main class="responsive-container">
+			<div class="video-container">
+				<div>
+					<iframe frameborder="0" allowfullscreen="true"></iframe>
+				</div>
+			</div>
+			<div class="chatroom-container">
+				<iframe frameborder="0"></iframe>
+			</div>
+		</main>
+	</body>
+</html>
