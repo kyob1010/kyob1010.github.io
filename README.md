@@ -6,5 +6,11 @@
 
 ## 作品集
 [動物雲端 (電子商務期末專題)](https://kyob1010.github.io/animalcloud/)
+線上動物園
 
 [高等計算機圖學練習](https://kyob1010.github.io/ComputerGraphicsPratice)
+我在高等計算機圖學這門課的作業程式碼
+
+[串流觀看工具](https://kyob1010.github.io/stream_user_tool/index.html)
+輸入嵌入的影片網址和聊天室網址，就可以藉由這個工具使用不同平台的服務，
+也就是將兩個不同平台的影片和聊天室結合在同一個畫面。
