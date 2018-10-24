@@ -1,0 +1,44 @@
+html, body, main {
+	height: 100%;
+	margin: 0;
+  overflow: hidden;
+}
+.responsive-container {
+	display: flex;
+}
+.video-container {
+	flex: 1;
+  position: relative;
+}
+.video-container > iframe, .chatroom-container > iframe {
+	width: 100%;
+	height: 100%;
+}
+.smart-chatroom {
+  background: #99f;
+}
+.chatroom-container {
+  display: none;
+}
+.view {
+  display: inherit;
+}
+/*
+@media screen and (orientation:portrait) {
+  .responsive-container {
+    flex-direction: column;
+  }
+  .smart-chatroom {
+    width: 100%;
+    height: 0.5vh;
+    min-height: 20px;
+  }
+}
+*/
+@media screen and (orientation:landscape) {
+  .smart-chatroom {
+    width: 0.5vw;
+    min-width: 20px;
+    height: 100%;
+  }
+}
