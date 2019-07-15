@@ -9,6 +9,9 @@
 最近寫的可愛小遊戲，目前基礎的單人模式完成
 還有一些想法想要加進去 :D
 
+[圈圈叉叉](https://kyob1010.github.io/tic-tac-toe/index.html)
+閒暇時間寫的小遊戲
+
 [動物雲端 (電子商務期末專題)](https://kyob1010.github.io/animalcloud/)
 線上動物園
 
